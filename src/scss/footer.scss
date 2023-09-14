@@ -1,0 +1,85 @@
+//====================================================================================================
+.footer {
+    background-color: #08664F;
+    &__container {
+        padding: rem(42) rem(17) rem(41) rem(17);
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        @media (min-width: $tablet) {
+            padding: rem(50) rem(30) rem(55) rem(30);
+            grid-template-columns: repeat(3, auto);
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        margin-bottom: rem(31);
+        @media (min-width: $tablet) {
+            margin-bottom: rem(0);
+        }
+    }
+
+    &__menu {
+        order: 1;
+        @media (min-width: $tablet) {
+            order: 0;
+        }
+    }
+
+    &__social {
+    }
+}
+.menu-footer {
+
+    &__body {
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: rem(15);
+        @media (min-width: $tablet) {
+            flex-direction: row;
+            gap: rem(30);
+            justify-content: center;
+            padding-left: rem(45);
+        }
+    }
+
+    &__item {
+    }
+
+    &__link {
+        color: #FFF;
+        font-size: rem(14);
+        font-weight: 400;
+        line-height: math.div(18,14);
+        @media (min-width: $tablet) {
+            font-size: rem(16);
+            line-height: math.div(24,16);
+        }
+    }
+}
+.social-footer {
+
+    &__list {
+        display: flex;
+        gap: rem(20);
+        justify-content: end;
+        padding-top: rem(5);
+        @media (min-width: $tablet) {
+            gap: rem(15);
+        }
+    }
+
+    &__item {
+        @media (min-width: $mobile) {
+            img {
+                width: rem(35);
+                height: rem(35);
+            }
+        }
+    }
+}
+
+//====================================================================================================
